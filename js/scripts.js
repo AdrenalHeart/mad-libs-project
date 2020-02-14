@@ -4,10 +4,12 @@ $(document).ready(function(){
 
     blanks.forEach(function(blank){
       var userInput = $("input." + blank).val();
+      console.log(userInput);
       $("." + blank).text(userInput).val();
     });
 
-    $("#story").sho();
+    $("#story").show();
 
+    event.preventDefault();
   });
 });
